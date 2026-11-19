@@ -32,7 +32,7 @@ pub fn food_change(event: Event) -> i32 {
 pub fn days_lost(event: Event) -> u32 {
     match event {
         Event::Storm => 1,
-        Event::Sicknes(days) => days,
+        Event::Sickness(days) => days,
         Event::Windfall(_) => 0,
     }
 }
